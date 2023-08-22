@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
     {
         //path is here dynamic
       name: "Profile",
-      path: `/mentor/profile/${user?._id}`,
+      path: `/userprofile`,
       icon: "fa-solid fa-user",
     },
   ];

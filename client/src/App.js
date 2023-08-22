@@ -14,6 +14,7 @@ import Profile from './pages/mentor/Profile';
 import BookingPage from './pages/BookingPage';
 import Appointments from './pages/Appointments';
 import MentorAppointments from './pages/mentor/MentorAppointments';
+import UserProfile from './pages/UserProfile';
 function App() {
   //getting the boolean from the store
 
@@ -66,6 +67,13 @@ function App() {
                 <NotificationPage />
               </ProtectedRoute>
             } />
+
+            <Route path="/userprofile" element={
+              <ProtectedRoute>
+                <UserProfile />
+              </ProtectedRoute>
+            } />
+            
             <Route path="/login" element={
               <PublicRoute>
                 <Login />
